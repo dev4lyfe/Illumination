@@ -46,7 +46,9 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\BackUp.cs" />
      <Compile Include="Assets\ClickForwardCollider.cs" />
+     <Compile Include="Assets\Desk.cs" />
      <Compile Include="Assets\Drawer.cs" />
      <Compile Include="Assets\PickUpAble.cs" />
  <Reference Include="UnityEngine.UI">

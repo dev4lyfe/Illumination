@@ -5,6 +5,8 @@ public class PickUpAble : MonoBehaviour {
 
 	public bool canBePickedUp = false;
 	public bool isPickedUp = false;
+	public Light light2, d;
+	public Transform newPosition;
 
 	void OnTriggerEnter (Collider other) {
 		if (other.tag == "MainCamera") {
@@ -18,11 +20,13 @@ public class PickUpAble : MonoBehaviour {
 	}
 
 	void OnMouseDown () {
-		if (canBePickedUp) {
-			gameObject.transform.SetParent(GameObject.FindGameObjectWithTag("MainCamera").transform, false);
-			gameObject.transform.localPosition.Set(GameObject.FindGameObjectWithTag("MainCamera").transform.position.x,GameObject.FindGameObjectWithTag("MainCamera").transform.position.y,GameObject.FindGameObjectWithTag("MainCamera").transform.position.z);
-			gameObject.transform.rotation = Quaternion.identity;
-		}
+		gameObject.transform.SetParent(newPosition, false);
+		gameObject.transform.position = newPosition.position;
+		gameObject.transform.rotation = newPosition.transform.rotation;
+		gameObject.transform.localScale = new Vector3 (1f, 1f, 1f);
+		light2.enabled = true;
+		d.enabled = true;
+
 	}
 
 }
