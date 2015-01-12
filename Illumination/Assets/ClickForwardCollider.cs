@@ -7,5 +7,6 @@ public class ClickForwardCollider : MonoBehaviour {
 
 	void OnMouseDown () {
 		thisAnimator.SetTrigger ("forward");
+		print ("FICK");
 	}
 }
