@@ -21,7 +21,6 @@ public class PickUpAble : MonoBehaviour {
 	void OnMouseDown () {
 		if (canBePickedUp) {
 			gameObject.transform.SetParent(GameObject.FindGameObjectWithTag("MainCamera").transform);
-			print ("pickUPTHO");
 		}
 	}
 
