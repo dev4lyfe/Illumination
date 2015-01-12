@@ -7,8 +7,10 @@ public class PickUpAble : MonoBehaviour {
 	public bool isPickedUp = false;
 
 	void OnTriggerEnter (Collider other) {
-		if (other.tag == "MainCamera")
+		if (other.tag == "MainCamera") {
 			canBePickedUp = true;
+			print ("collider");
+		}
 	}
 
 	void OnTriggerExit (Collider other) {
@@ -19,7 +21,7 @@ public class PickUpAble : MonoBehaviour {
 	void OnMouseDown () {
 		if (canBePickedUp) {
 			gameObject.transform.SetParent(GameObject.FindGameObjectWithTag("MainCamera").transform);
-			
+			print ("pickUPTHO");
 		}
 	}
 
