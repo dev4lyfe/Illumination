@@ -46,15 +46,15 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\BackUp.cs" />
-     <Compile Include="Assets\ClickForwardCollider.cs" />
-     <Compile Include="Assets\Desk.cs" />
-     <Compile Include="Assets\Drawer.cs" />
-     <Compile Include="Assets\GridCube.cs" />
-     <Compile Include="Assets\GridLayout.cs" />
-     <Compile Include="Assets\PickUpAble.cs" />
-     <Compile Include="Assets\PlayerControl.cs" />
-     <Compile Include="Assets\PuzzlePiece.cs" />
+     <Compile Include="Assets\Scripts\BackUp.cs" />
+     <Compile Include="Assets\Scripts\ClickForwardCollider.cs" />
+     <Compile Include="Assets\Scripts\Desk.cs" />
+     <Compile Include="Assets\Scripts\Drawer.cs" />
+     <Compile Include="Assets\Scripts\GridCube.cs" />
+     <Compile Include="Assets\Scripts\GridLayout.cs" />
+     <Compile Include="Assets\Scripts\PickUpAble.cs" />
+     <Compile Include="Assets\Scripts\PlayerControl.cs" />
+     <Compile Include="Assets\Scripts\PuzzlePiece.cs" />
      <Compile Include="Assets\Scripts\Response.cs" />
      <Compile Include="Assets\Scripts\ViewControl.cs" />
      <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
